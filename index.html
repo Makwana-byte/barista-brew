@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Barista Brew - Artisanal coffee shop serving freshly brewed espresso, cold brews, and delicious bites in a warm, cozy atmosphere.">
+  <title>Barista Brew | Handcrafted Artisanal Coffee</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-sub">THE ARTISAN</span>
+        <span class="brand-title">BARISTA BREW</span>
+      </a>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">Our Story</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#why-us" class="nav-link">Why Us</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#team" class="nav-link">Team</a></li>
+          <li><a href="#contact" class="nav-link">Visit Us</a></li>
+        </ul>
+        <div class="nav-cta-wrapper">
+          <a href="#contact" class="btn btn-primary nav-cta">Book a Table</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section (Canva Page 1) -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <span class="badge fade-in">CRAFTED WITH CARE</span>
+        <h1 class="hero-title fade-in">FRESHLY BREWED COFFEE, MADE FOR REAL LOVERS</h1>
+        <p class="hero-text fade-in">Step into Barista Brew. Experience bold espresso extractions, silky handcrafted lattes, and an atmosphere designed for quiet breaks and genuine conversations.</p>
+        <div class="hero-actions fade-in">
+          <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+          <a href="#about" class="btn btn-outline">Our Story</a>
+        </div>
+        
+        <!-- Highlight stats -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Arabica Beans</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">4.9★</span>
+            <span class="stat-label">Customer Rating</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">Fresh</span>
+            <span class="stat-label">Daily Roasts</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section (Canva Page 2 & Page 5) -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-images">
+          <div class="img-frame frame-main">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=80" alt="Espresso extraction at Barista Brew" class="responsive-img">
+          </div>
+          <div class="img-frame frame-accent">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=500&q=80" alt="Barista pouring V60 brew" class="responsive-img">
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="section-badge">ABOUT BARISTA BREW</span>
+          <h2 class="section-title">Freshly Brewed, Made With Care</h2>
+          <p class="lead-text">Barista Brew is a cozy café crafted specifically for coffee lovers who appreciate the subtle art in every cup.</p>
+          <p class="body-text">We serve freshly brewed coffee, delicious artisanal bites, and refreshing cold drinks in a warm, welcoming sanctuary. Whether you are catching up with lifelong friends, finishing focused work, or simply taking a quiet afternoon break, we are here to make every single visit special.</p>
+          
+          <div class="promise-quote">
+            <div class="quote-bar"></div>
+            <p><strong>Our Vision:</strong> At Barista Brew, our vision is to create a warm and welcoming space where every cup brings people together through quality coffee and friendly service.</p>
+          </div>
+
+          <a href="#menu" class="btn btn-secondary">Discover Our Roasts</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu & Specials Section (Canva Page 3 & Page 4) -->
+    <section class="section menu" id="menu">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">CRAFTED WITH CARE</span>
+          <h2 class="section-title">Our Favourites & Specials</h2>
+          <p class="section-desc">From intense, velvety espresso extractions to comforting creamy specialty lattes.</p>
+          
+          <!-- Category Filters -->
+          <div class="menu-tabs">
+            <button class="tab-btn active" data-filter="all">All Drinks</button>
+            <button class="tab-btn" data-filter="favourites">House Favourites</button>
+            <button class="tab-btn" data-filter="specials">Specialty Brews</button>
+          </div>
+        </div>
+
+        <div class="menu-grid" id="menuItems">
+          <!-- Item 1 (Canva Page 3) -->
+          <article class="menu-card" data-category="favourites">
+            <div class="card-media">
+              <span class="card-tag">Signature</span>
+              <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Classic Bold Espresso" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-header">
+                <h3 class="card-title">Classic Espresso</h3>
+                <span class="card-price">₹180</span>
+              </div>
+              <p class="card-desc">Rich, bold, and freshly extracted under 9 bars of pressure. Notes of dark chocolate and toasted hazelnuts.</p>
+              <div class="card-meta">
+                <span class="meta-tag">Hot</span>
+                <span class="meta-tag">Single Origin</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2 (Canva Page 3) -->
+          <article class="menu-card" data-category="favourites">
+            <div class="card-media">
+              <span class="card-tag">Refreshing</span>
+              <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=600&q=80" alt="Iced Cold Brew Coffee" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-header">
+                <h3 class="card-title">Barista Cold Coffee</h3>
+                <span class="card-price">₹220</span>
+              </div>
+              <p class="card-desc">Smooth, creamy, and deeply refreshing. Steeped for 18 hours and served over crystalline ice blocks.</p>
+              <div class="card-meta">
+                <span class="meta-tag">Cold</span>
+                <span class="meta-tag">Creamy</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3 (Canva Page 4) -->
+          <article class="menu-card" data-category="specials">
+            <div class="card-media">
+              <span class="card-tag">Bestseller</span>
+              <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80" alt="Velvety Cappuccino with Latte Art" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-header">
+                <h3 class="card-title">Artisan Cappuccino</h3>
+                <span class="card-price">₹210</span>
+              </div>
+              <p class="card-desc">Rich double espresso balanced with equal parts steamed milk and dense, glossy micro-foam.</p>
+              <div class="card-meta">
+                <span class="meta-tag">Hot</span>
+                <span class="meta-tag">Micro-Foam</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4 (Canva Page 4) -->
+          <article class="menu-card" data-category="specials">
+            <div class="card-media">
+              <span class="card-tag">Popular</span>
+              <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=600&q=80" alt="Smooth Cafe Latte" loading="lazy">
+            </div>
+            <div class="card-body">
+              <div class="card-header">
+                <h3 class="card-title">Silky Café Latte</h3>
+                <span class="card-price">₹230</span>
+              </div>
+              <p class="card-desc">Smooth espresso harmoniously blended with gently steamed whole milk and topped with delicate latte art.</p>
+              <div class="card-meta">
+                <span class="meta-tag">Hot</span>
+                <span class="meta-tag">Silky Milk</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us (Canva Page 6) -->
+    <section class="section why-us" id="why-us">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">YOUR PERFECT COFFEE MOMENT</span>
+          <h2 class="section-title">Why Choose Barista Brew</h2>
+          <p class="section-desc">Every cup is crafted with quality ingredients and deep passion to give you a warm and memorable coffee experience.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <!-- Coffee Cup Icon -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path><line x1="6" y1="2" x2="6" y2="4"></line><line x2="10" y1="2" x2="10" y2="4"></line><line x1="14" y1="2" x2="14" y2="4"></line></svg>
+            </div>
+            <h3 class="feature-title">Freshly Brewed Coffee</h3>
+            <p class="feature-text">Our beans are locally roasted in small batches and ground seconds before brewing to guarantee peak aroma and flavor.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <!-- Leaf / Ingredients Icon -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10a10 10 0 0 1-10-10C2 6.477 6.477 2 12 2Z"></path><path d="m9 12 2 2 4-4"></path></svg>
+            </div>
+            <h3 class="feature-title">Premium Quality Ingredients</h3>
+            <p class="feature-text">From 100% single-origin estate coffee beans to farm-fresh milk and organic raw sugars, nothing is compromised.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <!-- Heart / Care Icon -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+            </div>
+            <h3 class="feature-title">Made With Care</h3>
+            <p class="feature-text">Every single beverage is calibrated by passionate baristas who treat coffee extraction as both a science and a craft.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Café Ambiance & Portfolio Gallery (Canva Page 7) -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">BEST OUR PORTFOLIO</span>
+          <h2 class="section-title">The Barista Brew Atmosphere</h2>
+          <p class="section-desc">A visual glimpse into our cozy corners, warm timber tones, and daily brews.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item item-lg">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Cozy cafe interior with warm lighting" loading="lazy">
+            <div class="gallery-caption">Warm Interior & Cozy Spaces</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1509785307050-d4066910ec1e?auto=format&fit=crop&w=600&q=80" alt="Iced drink topped with chocolate shavings" loading="lazy">
+            <div class="gallery-caption">Layered Iced Specials</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80" alt="Fresh butter croissant with coffee" loading="lazy">
+            <div class="gallery-caption">Fresh Bakes & Pastries</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=600&q=80" alt="Coffee beans roasting" loading="lazy">
+            <div class="gallery-caption">Precision Roasts</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section (Canva Page 8) -->
+    <section class="section team" id="team">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-badge">TEAM BARISTA</span>
+          <h2 class="section-title">The Hands Behind Your Cup</h2>
+          <p class="section-desc">Meet the certified specialists dedicated to your perfect coffee experience.</p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Member 1 -->
+          <div class="team-card">
+            <div class="team-avatar">
+              <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=80" alt="Aarav Patel - Head Barista" loading="lazy">
+            </div>
+            <div class="team-info">
+              <h3 class="member-name">Aarav Patel</h3>
+              <p class="member-role">Head Barista</p>
+              <p class="member-bio">Certified Q-grader with 7+ years of experience curating artisanal roasts and espresso recipes.</p>
+            </div>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="team-card">
+            <div class="team-avatar">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80" alt="Riya Shah - Coffee Specialist" loading="lazy">
+            </div>
+            <div class="team-info">
+              <h3 class="member-name">Riya Shah</h3>
+              <p class="member-role">Coffee Specialist</p>
+              <p class="member-bio">Master of milk texturing and latte art; champions organic bean sourcing from local estates.</p>
+            </div>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="team-card">
+            <div class="team-avatar">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Kabir Mehta - Café Manager" loading="lazy">
+            </div>
+            <div class="team-info">
+              <h3 class="member-name">Kabir Mehta</h3>
+              <p class="member-role">Café Manager</p>
+              <p class="member-bio">Ensuring every guest receives heartfelt hospitality, quick service, and cozy cafe vibes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Visit Section (Canva Page 9 & 10) -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-details">
+          <span class="section-badge">OUR CONTACT</span>
+          <h2 class="section-title">See You For Your Next Perfect Cup</h2>
+          <p class="body-text">We are open 7 days a week. Drop in for your morning brew, afternoon study session, or reserve a table for an intimate meeting.</p>
+          
+          <div class="info-blocks">
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <span class="info-label">Direct Phone</span>
+                <a href="tel:+919876543210" class="info-value">+91 98765 43210</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <div>
+                <span class="info-label">Official Website</span>
+                <a href="https://www.baristacoffee.com" target="_blank" rel="noopener" class="info-value">www.baristacoffee.com</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </div>
+              <div>
+                <span class="info-label">Social Media</span>
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="info-value">@baristacoffee</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div>
+                <span class="info-label">Café Hours</span>
+                <p class="info-value">Mon – Sun: 8:00 AM – 10:30 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fast Contact / Table Reservation Form -->
+        <div class="contact-card">
+          <h3 class="form-title">Reserve a Table / Send a Note</h3>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="e.g. Rahul Sharma" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="e.g. +91 98765 43210" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="guests">Guests</label>
+                <select id="guests">
+                  <option value="1">1 Person</option>
+                  <option value="2" selected>2 People</option>
+                  <option value="3-4">3 - 4 People</option>
+                  <option value="5+">5+ People</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" value="16:00">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Special Request</label>
+              <textarea id="notes" rows="3" placeholder="Window seating, quiet corner, allergies..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Confirm Reservation</button>
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="brand-title">BARISTA BREW</span>
+        <p class="footer-tagline">Freshly brewed coffee, made with care. Your welcoming sanctuary in Gujarat.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Barista Brew. All rights reserved. Handcrafted for coffee lovers.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Scroll-To-Top Button -->
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
